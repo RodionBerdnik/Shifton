@@ -601,12 +601,14 @@ button {
     top: 0;
     width: 100%;
     background-color: #080702;
-  }
-  
+  } 
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .navbar a{
+    text-decoration: underline;
   }
   .header__logo{
       width: 255px;
