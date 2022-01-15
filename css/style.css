@@ -480,7 +480,7 @@
     --green:#54A757;
     --blue:#29AAE3;
     --yellow:#FFC65D;
-    --grey:#C4C4C4;
+    --grey:#F9F9F9;
     --purple:#9033F9;
     --pink:#FF5966;
     --black:#080702;
@@ -508,6 +508,7 @@
     color: inherit;
   }
 
+
   h1 {
     font-size: 48px;
     font-weight: 500;
@@ -525,6 +526,12 @@
     font-size: 22px;
     font-weight: 900;
   }
+
+  h4{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
   .text-md {
     font-weight: 500;
   }
@@ -538,7 +545,7 @@
   }
   
   .section {
-    margin-top: 160px;
+    margin-top: 100px;
   }
   
 button {
@@ -553,7 +560,8 @@ button {
   .btn {
     border-radius: 999px;
     font-weight: 500;
-    padding: 12px 18px;
+    padding: 12px 30px;
+    font-size: 20px;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
@@ -653,8 +661,62 @@ button {
       width: 50%;
       line-height: 1;
   }
-  .hero-btn {
-    padding: 12px 30px;
-    font-size: 20px;
-  }
   /*====================HERO END=======================*/
+
+  /*====================OPPORTUNITIES START=======================*/
+  .opportunities{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+  }
+  .opportunities-wrap{
+    background-color: var(--grey);
+    width: 310px;
+    border-radius: 20px;
+    padding: 32px 26px;
+  }
+  .opportunities-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+  }
+  .icon-yellow{
+    background-color: var(--yellow);
+  }
+  .icon-purple{
+    background-color: var(--purple);
+  }
+  .icon-pink{
+    background-color: var(--pink);
+  }
+  .icon-blue{
+    background-color: var(--blue);
+  }
+  .opportunities-wrap h3{
+    color: var(--blue);
+    margin: 20px 0;
+    width: 50%;
+  }
+  .opportunities-wrap ul{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin: 30px 0 40px 0;
+    padding: 0 20px;
+    width: 110%;
+  }
+  .opportunities-wrap ul:nth-child(1){
+    margin: 30px 0 50px 0;
+  }
+  .opportunities ul{
+    list-style-type: disc;
+    color: var(--blue);
+  }
+  li span{
+    color: black;
+  }
+
+  /*====================OPPORTUNITIES END=======================*/
