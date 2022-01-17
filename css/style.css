@@ -495,7 +495,7 @@
   }
 
   body {
-    font-family: 'Roboto','Noto Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
     'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: 400;
     font-size: 16px;
@@ -512,7 +512,6 @@
   h1 {
     font-size: 48px;
     font-weight: 500;
-    margin-bottom: 20px;
   }
 
   .title {
@@ -527,7 +526,7 @@
     font-weight: 900;
   }
 
-  h4{
+  .list-title{
     font-size: 20px;
     font-weight: 500;
   }
@@ -607,8 +606,13 @@ button {
     align-items: center;
     justify-content: space-between;
   }
-  .navbar a{
+  .navbar__nav a{
+    padding: 14px 15px;
+  }
+  .navbar__nav a:hover {
     text-decoration: underline;
+    color: gold;
+    transition: 0.3s;
   }
   .header__logo{
       width: 255px;
@@ -617,65 +621,96 @@ button {
   .navbar__nav {
     display: flex;
     align-items: center;
-    gap:30px;
-    font-weight: 700px;
-    font-size: 16px;
+    font-weight: 700;
     color:#fff;
-    padding: 15px 0;
     text-transform: uppercase;
   }
-  .navbar__nav i{
-      color: #fff;
-      font-size: 16px;
+  .registration {
+    border-radius: 999px;
+    padding: 0 15px;
+    margin: 0 15px;
+    background-color: var(--blue);
+    border: 1px solid transparent;
+    font-size: 20px;
+    text-transform:none;
+    font-weight: 500;
   }
-  .navbar__nav a:hover {
-    text-decoration: underline;
-  } 
+   a>.fa-sort-down{
+    margin-left: 5px;
+  }
+  .dropmenu{
+    position: relative;
+  }
+  .dropmenu__list{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0 15px;
+    position: absolute;
+    box-shadow: 3px 3px 10px -5px #333;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+  }
+  .dropmenu:hover>.dropmenu__list,
+  .dropmenu:focus-within>.dropmenu__list{
+    visibility: visible;
+    transition: 0.3s;
+  }
+  .dropmenu__list a{
+    padding:14px 15px;
+  }
+  .dropmenu__list a:hover{
+    color:rgb(29, 230, 86);
+    transition: 0.3s;
+  }
+  .dropmenu__list li{
+    color:var(--blue);
+  }
   /*====================HEADER END=======================*/
 
   /*====================HERO START=======================*/
 
 .hero {
-    min-height: 800px;
-    background: url('../img/Hero-image.webp') #e0e0e0 no-repeat center top / cover;
+    padding-top: 165px;
+    padding-bottom: 215px;
+    background: linear-gradient(104.58deg, rgba(0, 0, 0, 0.52) 55.87%, rgba(0, 0, 0, 0.255667) 89.51%, rgba(0, 0, 0, 0) 108.26%),url('../img/Hero-image.webp') #e0e0e0 no-repeat left  top  / cover;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  
-  .hero-text:not(:last-child){
-    display: flex;
-    flex-direction: column;
-  }
   .hero-text {
     color: #fff;
-    margin: 0 0 60px 60px;
+    width: 815px;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    align-items: flex-start;
   }
-  .hero-text>h1{
-      width:70%;
+  .hero-text button:active{
+    background-color: #0062CC;
   }
   .hero-text-sm{
       font-size: 26px;
       display: flex;
       flex-direction: column;
       gap:16px;
-      margin: 32px 0;
-      width: 50%;
-      line-height: 1;
+      width: 85%;
   }
   /*====================HERO END=======================*/
 
   /*====================OPPORTUNITIES START=======================*/
-  .opportunities{
+  .opportunities-container{
     display: flex;
-    flex-direction: row;
     gap:12px;
   }
-  .opportunities-wrap{
+  .opportunities-block{
     background-color: var(--grey);
     width: 310px;
     border-radius: 20px;
-    padding: 32px 26px;
+    padding: 32px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .opportunities-icon{
     display: flex;
@@ -697,28 +732,36 @@ button {
   .icon-blue{
     background-color: var(--blue);
   }
-  .opportunities-wrap h3{
+  .opportunities-block h3{
     color: var(--blue);
     margin: 20px 0;
-    width: 50%;
   }
-  .opportunities-wrap ul{
+  .opportunities-block h3,h4{
+    min-height: calc(2em * 1.17);
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+  }
+  .opportunities-block ul{
     display: flex;
     gap: 12px;
     flex-direction: column;
     margin: 30px 0 40px 0;
-    padding: 0 20px;
-    width: 110%;
+    padding-left: 20px ;
+    font-weight: 400;
+    font-family: 'Noto Sans';
   }
-  .opportunities-wrap ul:nth-child(1){
-    margin: 30px 0 50px 0;
-  }
-  .opportunities ul{
+  .opportunities-container ul{
     list-style-type: disc;
     color: var(--blue);
   }
   li span{
     color: black;
   }
-
+  .opportunitie-btn{
+    margin-top: auto;
+  }
+  .opportunitie-btn:active{
+    background-color: #0062CC;
+  }
   /*====================OPPORTUNITIES END=======================*/
