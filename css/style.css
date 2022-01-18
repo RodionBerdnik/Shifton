@@ -558,6 +558,7 @@ button {
 
   .btn {
     border-radius: 999px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
     font-weight: 500;
     padding: 12px 30px;
     font-size: 20px;
@@ -575,17 +576,41 @@ button {
     color: rgb(255, 255, 255);
     background: var(--green);
   }
+  .btn-green:hover{
+    background-color: #4FA152;;
+  }
+  .btn-green:active{
+    background-color: #0062CC;
+  }
   .btn-blue {
     color: rgb(255, 255, 255);
     background: var(--blue);
+  }
+  .btn-blue:hover{
+    background-color: #269ACD;
+  }
+  .btn-blue:active{
+    background-color: #9033F9;
   }
   .btn-pink {
     color: rgb(255, 255, 255);
     background: var(--pink);
   }
+  .btn-pink:hover{
+    background-color: #EB5560;
+  }
+  .btn-pink:active{
+    background-color: #EB5560;
+  }
   .btn-purple{
     color: rgb(255, 255, 255);
     background: var(--purple);
+  }
+  .btn-purple:hover{
+    background-color: #842EE7;
+  }
+  .btn-purple:active{
+    background-color: #54A757;
   }
   .container {
     width: 100%;
@@ -761,7 +786,42 @@ button {
   .opportunitie-btn{
     margin-top: auto;
   }
-  .opportunitie-btn:active{
-    background-color: #0062CC;
-  }
+
   /*====================OPPORTUNITIES END=======================*/
+
+  /*====================TIMETABLE START=======================*/
+  .timetable{
+    width: 100%;
+    background-color: var(--grey);
+  }
+  .timetable-title{
+    color: var(--blue);
+    margin-bottom: 40px;
+    padding-top: 70px;
+  }
+  .timetable-block{
+    display: flex;
+    justify-content: space-between;
+    gap:120px;
+  }
+  .information{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    width: 475px;
+    padding: 95px 0 225px 0;
+  }
+  .timetable-text{
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    line-height: 1.36;
+  }
+  .timetable-btn{
+    padding: 12px 50px;
+  }
+  .timetable-img{
+    width: 648px;
+    height: 483px;
+  }
+  /*====================TIMETABLE END=======================*/
