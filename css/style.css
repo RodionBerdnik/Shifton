@@ -600,7 +600,7 @@ button {
     background-color: #EB5560;
   }
   .btn-pink:active{
-    background-color: #EB5560;
+    background-color: #54A757;
   }
   .btn-purple{
     color: rgb(255, 255, 255);
@@ -793,35 +793,110 @@ button {
   .timetable{
     width: 100%;
     background-color: var(--grey);
+    padding-top: 70px;
+    padding-bottom: 48px;
   }
   .timetable-title{
     color: var(--blue);
     margin-bottom: 40px;
-    padding-top: 70px;
   }
   .timetable-block{
     display: flex;
     justify-content: space-between;
-    gap:120px;
+    align-items: center;
   }
-  .information{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
+  .timetable-information{
     width: 475px;
-    padding: 95px 0 225px 0;
+    padding-bottom: 75px;
   }
-  .timetable-text{
+  .information-text{
     font-size: 18px;
     font-family: 'Noto Sans';
     line-height: 1.36;
   }
   .timetable-btn{
     padding: 12px 50px;
+    margin-top: 40px;
   }
   .timetable-img{
     width: 648px;
     height: 483px;
+    object-fit: contain;
   }
   /*====================TIMETABLE END=======================*/
+
+  /*====================OPTIMISAZION START=======================*/
+  .optimization{
+    width: 100%;
+  }
+  .optimization-title{
+    color: var(--purple);
+    margin-bottom: 40px;
+  }
+  .optimization-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .optimization-information{
+    width: 425px;
+    padding-bottom: 50px;
+  }
+  .optimization-text{
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    line-height: 1.36;
+  }
+  .optimization-btn{
+    padding: 12px 50px;
+    margin-top: 40px;
+  }
+  .optimization-img{
+    width: 713px;
+    height: 373px;
+    object-fit: contain;
+  }
+  /*====================OPTIMISAZION END=======================*/
+
+  /*====================CONTROL START=======================*/
+  .control{
+    width: 100%;
+    background-color: var(--grey);
+    padding-top: 70px;
+    padding-bottom: 48px;
+  }
+  .control-title{
+    color: var(--pink);
+    margin-bottom: 20px;
+  }
+  .control-block{
+    display: flex;
+    gap:286px;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 140px;
+  }
+  .control-information{
+    width: 445px;
+  }
+  .control-text{
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    line-height: 1.36;
+  }
+  .control-btn{
+    padding: 12px 50px;
+    margin-top: 40px;
+  }
+  .control-img{
+    width: 369px;
+    height: 469px;
+    object-fit: contain;
+  }
+  /*====================CONTROL END=======================*/
+
+  /*====================MEDIA START=======================*/
+  .media-title{
+    width: 596px;
+  }
+  /*====================MEDIA END=======================*/
