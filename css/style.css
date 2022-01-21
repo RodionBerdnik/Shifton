@@ -623,6 +623,7 @@ button {
     top: 0;
     width: 100%;
     background-color: #080702;
+    position: sticky;
   } 
   .navbar {
     display: flex;
@@ -935,10 +936,64 @@ button {
   .questions-networks{
     display: flex;
     flex-direction: row;
-    gap:26px;
+    gap:6px;
   }
   .networks-img{
     height: 50px;
     width: 50px;
+    margin: 10px;
   }
   /*====================MEDIA END=======================*/
+
+  /*====================FOOTER START=======================*/
+    .footer{
+      background-color: var(--blue);
+      padding-top: 55px;
+      padding-bottom: 85px;
+    }
+    .footer-menu{
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap:36px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid #C4C4C4;
+    }
+    .footer-menu a:hover{
+      text-decoration: underline;
+      color: gold;
+      transition: 0.3s;
+    }
+    .footer-down{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:12px;
+      margin-top: 20px;
+    }
+    .footer-down-download{
+      display: flex;
+      gap:8px;
+      align-items: center;
+    }
+    .google-play{
+      width: 152px;
+      height: 58px;
+    }
+    .app-store{
+      width: 120px;
+      height: 40px;
+    }
+    .footer-down-text{
+      font-size: 20px;
+      font-weight: 500;
+      color:#fff;
+      width: 450px;
+      text-align: center;
+    }
+    .footer-down-language{
+      width: 130px;
+      height: 25px;
+    }
+    /*====================FOOTER END=======================*/
