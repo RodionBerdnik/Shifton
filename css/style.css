@@ -445,10 +445,7 @@
   section {
     display: block;
   }
-  
-  body {
-    line-height: 1;
-  }
+
   
   ol,
   ul {
@@ -500,6 +497,7 @@
     font-weight: 400;
     font-size: 16px;
     padding-bottom: 1000px; /*dev only*/
+    line-height: 1.17;
   }
 
   a {
@@ -763,7 +761,6 @@ button {
   }
   .opportunities-block h3,h4{
     min-height: calc(2em * 1.17);
-    line-height: 1.17;
     display: flex;
     align-items: center;
   }
@@ -896,7 +893,52 @@ button {
   /*====================CONTROL END=======================*/
 
   /*====================MEDIA START=======================*/
+  .media{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:#434449;
+  }
   .media-title{
     width: 596px;
+    margin: 0 auto;
+  }
+  .media-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   iframe{
+    width: 1000px;
+    height: 562.27px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .video{
+    display: flex;
+    justify-content: center;
+  }
+  .questions{
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:60px;
+  }
+  .questions-text{
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .questions-text a{
+    color: var(--blue);
+  }
+  .questions-networks{
+    display: flex;
+    flex-direction: row;
+    gap:26px;
+  }
+  .networks-img{
+    height: 50px;
+    width: 50px;
   }
   /*====================MEDIA END=======================*/
