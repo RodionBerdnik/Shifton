@@ -1163,3 +1163,115 @@ iframe {
   margin-bottom: 100px;
 }
 }
+/* `lg` applies to large devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+  .navbar {
+    justify-content: space-between;
+}
+  .header__logo {
+    width: 170px;
+}
+  .navbar__nav a {
+    padding: 8px 5px;
+    font-size: 12px;
+}
+.registration {
+  margin: 0 10px;
+}
+h1 {
+  font-size: 30px;
+}
+.hero-text {
+  gap: 25px;
+}
+.hero-text-sm {
+  font-size: 20px;
+  gap: 12px;
+}
+.hero-text .btn{
+  font-size: 14px;
+}
+.title {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+.opportunities-container {
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.opportunities-block {
+  width: 233px;
+  padding: 20px 19px;
+}
+.timetable-block {
+  padding: 0 25px;
+}
+.timetable-img {
+  width: 420px;
+  height: 300px;
+}
+.information-text {
+  font-size: 11px;
+}
+.timetable-information {
+  padding-bottom: 50px;
+}
+.timetable-btn {
+  margin-top: 25px;
+  font-size: 13px;
+}
+.optimization-text {
+  font-size: 11px;
+}
+.optimization-img {
+  width: 385px;
+  height: 230px;
+}
+.optimization-btn {
+  margin-top: 25px;
+  font-size: 13px;
+}
+.control-text {
+  font-size: 11px;
+}
+.control-information {
+  width: 275px;
+}
+.control-btn {
+  margin-top: 25px;
+  font-size: 13px;
+}
+iframe {
+  width: 601px;
+  height: 338.27px;
+}
+.questions {
+  width: 500px;
+  gap: 40px;
+}
+.questions-text {
+  font-size: 20px;
+}
+.networks-img {
+  height: 40px;
+  width: 40px;
+}
+.networks-img:hover {
+  height: 50px;
+  width: 50px;
+}
+.questions-networks {
+  gap: 12px;
+}
+}
+/*----------------------------------------------------*/
+/* `md` applies to medium devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
