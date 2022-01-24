@@ -869,10 +869,8 @@ button {
   }
   .control-block{
     display: flex;
-    gap:286px;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 60px;
-    margin-right: 140px;
   }
   .control-information{
     width: 445px;
@@ -936,12 +934,32 @@ button {
   .questions-networks{
     display: flex;
     flex-direction: row;
-    gap:6px;
+    gap:16px;
+  }
+  .facebook,.twitter,.linkedin,.youtube{
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  .facebook:hover{
+    box-shadow: 0 0 15px #3b5998;
+  }
+  .twitter:hover{
+    box-shadow: 0 0 15px #00aced;
+  }
+  .linkedin:hover{
+    box-shadow: 0 0 15px #007AB7;
+  }
+  .youtube:hover{
+    box-shadow: 0 0 15px #F52929;
   }
   .networks-img{
     height: 50px;
     width: 50px;
-    margin: 10px;
+  }
+  .networks-img:hover{
+    height: 60px;
+    width: 60px;
+    transition: all 0.3s ease;
   }
   /*====================MEDIA END=======================*/
 
@@ -981,9 +999,19 @@ button {
       width: 152px;
       height: 58px;
     }
+    .google-play:hover{
+      width: 162px;
+      height: 68px;
+      transition: all 0.5s ease;
+    }
     .app-store{
       width: 120px;
       height: 40px;
+    }
+    .app-store:hover{
+      width: 130px;
+      height: 50px;
+      transition: all 0.5s ease;
     }
     .footer-down-text{
       font-size: 20px;
@@ -997,3 +1025,141 @@ button {
       height: 25px;
     }
     /*====================FOOTER END=======================*/
+
+    /* `xxl` applies to xx-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .container {
+    max-width: 1140px;
+  }
+  .timetable-img{
+    width: 620px;
+    height: 450px;
+  }
+  .timetable-block{
+    justify-content: space-around;
+  }
+  .optimization-img {
+    width: 650px;
+    height: 350px;
+}
+.control-img {
+  width: 330px;
+  height: 430px;
+}
+iframe {
+  width: 900px;
+}
+}
+/* `xl` applies to x-large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  body{
+    font-size: 14px;
+  }
+  .navbar {
+    justify-content: space-around;
+}
+  .header__logo {
+    width: 225px;
+}
+.navbar__nav a {
+  padding: 8px 5px;
+}
+.hero {
+  padding-top: 80px;
+  padding-bottom: 130px;
+}
+.hero-text {
+  width: 630px;
+  padding-left: 25px;
+}
+h1{
+  font-size: 36px;
+}
+.title {
+  font-size: 30px;
+}
+.hero-text-sm {
+  font-size: 22px;
+}
+.btn {
+  padding: 12px 15px;
+}
+.opportunities-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+.opportunities-icon svg{
+  width: 45px;
+  height: 40px;
+}
+.opportunities-block h3 {
+  margin: 15px 0;
+}
+.subtitle {
+  font-size: 18px;
+}
+.list-title {
+  font-size: 16px;
+}
+.opportunities-block ul {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+  font-size: 11px;
+}
+.opportunitie-btn {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+.information-text {
+  font-size: 16px;
+}
+.timetable-img {
+  width: 560px;
+  height: 400px;
+}
+.timetable-block {
+  padding: 0 30px;
+}
+.timetable-btn {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.optimization-text {
+  font-size: 16px;
+}
+.optimization-img {
+  width: 510px;
+  height: 315px;
+}
+.optimization-information {
+padding-bottom: 0;
+}
+.optimization-block {
+  gap:30px;
+  padding: 0 30px;
+}
+.optimization-btn {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.control-img {
+  width: 300px;
+  height: 380px;
+}
+.control-btn {
+  margin-top: 30px;
+  font-size: 16px;
+}
+iframe {
+  width: 700px;
+  height: 451.27px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+}
