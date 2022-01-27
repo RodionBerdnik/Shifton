@@ -690,6 +690,9 @@ button {
   .dropmenu__list li{
     color:var(--blue);
   }
+  .navbar-mobile{
+    display: none;
+  }
   /*====================HEADER END=======================*/
 
   /*====================HERO START=======================*/
@@ -1274,4 +1277,152 @@ iframe {
   .container {
     max-width: 540px;
   }
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 1000;
+      background-color: #000;
+      left: 0px;
+      top: 0px;
+      justify-content: center;
+      transition: 0.3s;
+      transform: translateX(-100%);
+  }
+  .header:focus-within .navbar{
+    transform: translateX(0);
+  }
+  .navbar .header__logo{
+    display: none;
+  }
+  .navbar__nav{
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .navbar__nav .dropmenu{
+    display: none;
+  }
+  .navbar__nav a:last-child{
+    font-size: 20px;
+  }
+  .registration{
+    padding: 5px 30px;
+  }
+  .header__logo-mobile{
+    width: 125px;
+    height: 100%;
+  }
+  .navbar__nav-mobile{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+  }
+  .navbar__nav-mobile a{
+    padding: 10px 11px;
+  }
+  .navbar__nav-mobile .fa-bars{
+    font-size: 15px;
+  }
+  .hero {
+    background: linear-gradient(
+104.58deg
+, rgba(0, 0, 0, 0.52) 55.87%, rgba(0, 0, 0, 0.255667) 89.51%, rgba(0, 0, 0, 0) 108.26%),url(../img/Hero-image.webp) #e0e0e0 no-repeat center/ cover;
 }
+.hero-text {
+  width: 425px;
+}
+.hero-text .btn {
+  font-size: 16px;
+}
+.opportunities-block {
+  width: 265px;
+  padding: 32px 26px;
+}
+.opportunitie-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.timetable-block {
+  flex-direction: column-reverse;
+}
+.information-text {
+  font-size: 18px;
+  width: 340px;
+}
+.timetable-btn {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.timetable-information {
+  padding-bottom: 0; 
+}
+.optimization-block {
+  flex-direction: column;
+}
+.optimization-text {
+  font-size: 18px;
+  width: 340px;
+}
+.optimization-btn {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.control-block {
+  flex-direction: column-reverse;
+  gap:32px;
+}
+.control-text {
+  font-size: 18px;
+  width: 340px;
+}
+.control-information {
+  width: 425px;
+}
+.control-btn {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  width: 500px;
+  height: 280.27px;
+}
+.google-play {
+  width: 130px;
+  height: 50px;
+}
+.google-play:hover{
+  width: 140px;
+  height: 60px;
+  transition: all 0.5s ease;
+}
+.app-store {
+  width: 115px;
+  height: 35px;
+}
+.app-store:hover{
+  width: 125px;
+  height: 45px;
+  transition: all 0.5s ease;
+}
+.footer-down-text {
+  font-size: 18px;
+}
+}
+
