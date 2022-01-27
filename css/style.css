@@ -898,6 +898,7 @@ button {
   .media{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     color:#434449;
   }
@@ -1399,9 +1400,17 @@ iframe {
   display: flex;
   justify-content: center;
 }
+.media-title {
+  width: 400px;
+}
 iframe {
   width: 500px;
   height: 280.27px;
+}
+.questions {
+  width: 260px;
+  gap: 40px;
+  text-align: center;
 }
 .google-play {
   width: 130px;
@@ -1446,7 +1455,7 @@ h1 {
 }
 .hero-text {
   padding-left: 20px;
-  width: 360px;
+  width: 320px;
 }
 .hero-text .btn {
   width: 80%;
@@ -1491,14 +1500,15 @@ h1 {
   font-size: 18px;
 }
 iframe {
-  width: 330px;
-  height: 185px;
+  width: 320px;
+  height: 181px;
+}
+.questions {
+  width: 300px;
 }
 .questions-text {
   width: 245px;
   font-size: 18px;
-  text-align: center;
-  line-height: 1.17;
 }
 .footer-down-text {
   width: 310px;
